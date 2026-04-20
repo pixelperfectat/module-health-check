@@ -1,0 +1,26 @@
+{
+    "name": "pixelperfectat/module-health-check",
+    "description": "Pluggable post-deploy health-check framework for Magento 2",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "version": "0.1.0",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Andre Flitsch",
+            "email": "pixelhed@pixelperfect.at"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
+        "psr-4": {
+            "PixelPerfect\\HealthCheck\\": "src"
+        }
+    }
+}
